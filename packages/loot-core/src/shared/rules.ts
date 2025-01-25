@@ -209,6 +209,14 @@ export function friendlyOp(op, type?) {
       return 'is on budget';
     case 'offBudget':
       return 'is off budget';
+    case 'thisMonth':
+      return 'is this month';
+    case 'lastMonth':
+      return 'was last month';
+    case 'thisYear':
+      return 'is this year';
+    case 'lastYear':
+      return 'was last year';
     default:
       return '';
   }

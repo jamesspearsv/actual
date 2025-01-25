@@ -82,8 +82,16 @@ function ConfigureField({
 
   // Month and year fields are quite hacky right now! Figure out how
   // to clean this up later
-  if (subfield === 'month' || subfield === 'year') {
-    ops = ['is'];
+  // if (subfield === 'month' || subfield === 'year') {
+  //   ops = ['is', 'lastMonth'];
+  // }
+
+  if (subfield === 'month') {
+    ops = ['is', 'thisMonth', 'lastMonth'];
+  }
+
+  if (subfield === 'year') {
+    ops = ['is', 'thisYear', 'lastYear'];
   }
 
   return (
